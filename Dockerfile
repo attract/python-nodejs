@@ -1,4 +1,5 @@
-FROM python:3.9.0-slim-buster
+FROM python:3.9.18-slim-bookworm
+
 ENV \
     PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
