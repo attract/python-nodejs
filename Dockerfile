@@ -31,7 +31,7 @@ RUN pip install --no-use-pep517 --upgrade pip
 RUN pip install poetry==1.3.2
 
 # Install nodejs
-ENV NODE_VERSION=14.0.0
+ENV NODE_VERSION=15.0.0
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ENV NVM_DIR=/root/.nvm
 RUN . "$NVM_DIR/nvm.sh" && nvm install ${NODE_VERSION}
